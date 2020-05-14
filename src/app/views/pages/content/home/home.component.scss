@@ -1,0 +1,334 @@
+/*font Variables*/
+$rob: "Roboto", sans-serif;
+$hee: "Heebo", sans-serif;
+
+/*Color Variables*/
+$baseColor: #faba00;
+$dip: #222222;
+$pfont: #777777;
+
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700|Roboto:300,400,500,700");
+
+/* Home Banner Area css
+============================================================================================ */
+.home_banner_area {
+  z-index: 1;
+  background: url(./../../../../../assets/banner/home-banner.jpg) no-repeat scroll center center;
+  background-size: cover;
+}
+
+.banner_inner {
+  width: 100%;
+  .col-lg-8 {
+    vertical-align: middle;
+    align-self: center;
+  }
+  .banner_content {
+    text-align: left;
+    color: #fff;
+    h2 {
+      margin-top: 0px;
+      font-size: 36px;
+      font-weight: bold;
+      font-family: $hee;
+      line-height: 47px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #fff;
+      font-family: $rob;
+      margin-bottom: 35px;
+      max-width: 555px;
+    }
+    .banner_map_img {
+      text-align: right;
+    }
+    .banner_btn {
+      margin-right: 0px;
+    }
+  }
+}
+
+.home_right_box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 210px;
+  margin-bottom: 210px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  .home_item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+    line-height: 150px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+    i {
+      font-size: 40px;
+      &:before {
+        font-size: 40px;
+        color: #fff;
+        margin-left: 0px;
+      }
+    }
+    &:nth-child(odd) {
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    &:nth-child(5) {
+      border-bottom: 0px;
+    }
+    &:last-child {
+      border-bottom: 0px;
+    }
+    &:hover {
+      background: $baseColor;
+    }
+  }
+}
+/* End Home Banner Area css
+============================================================================================ */
+
+/* Furniture Area css
+============================================================================================ */
+.furniture_area {
+  background: #f9f9ff;
+}
+.furniture_inner {
+  margin-bottom: -30px;
+}
+.furniture_item {
+  margin-bottom: 30px;
+  img {
+    border-radius: 5px;
+  }
+  h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: $hee;
+    font-weight: bold;
+    color: $dip;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    transition: 0.5s;
+  }
+  p {
+    margin-bottom: 0px;
+  }
+  &:hover {
+    h4 {
+      color: $baseColor;
+    }
+  }
+}
+/* End Furniture Area css
+============================================================================================ */
+
+/* Feature Area css
+============================================================================================ */
+.feature_area {
+}
+.feature_inner {
+  margin-bottom: -30px;
+}
+.feature_item {
+  background: #f9f9ff;
+  border-radius: 10px;
+  padding: 40px 60px 40px 40px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+  h4 {
+    font-size: 18px;
+    color: $dip;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    position: relative;
+    padding-left: 35px;
+    i {
+      font-size: 24px;
+      padding-right: 15px;
+      font-weight: 600;
+      position: absolute;
+      left: 0px;
+      top: 40%;
+      transform: translateY(-50%);
+    }
+  }
+  p {
+    margin-bottom: 0px;
+  }
+  &:hover {
+    background: #fff;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+    h4 {
+      color: $baseColor;
+    }
+  }
+}
+/* End Feature Area css
+============================================================================================ */
+
+/* Looking Area css
+============================================================================================ */
+.impress_area {
+  background: url(./../../../../../assets/notify-bg.jpg) no-repeat scroll center center;
+  background-size: cover;
+  .impress_inner {
+    color: #fff;
+    h2 {
+      text-transform: uppercase;
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    p {
+      max-width: 530px;
+      margin: 0px auto 35px;
+    }
+  }
+}
+/* End Looking Area css
+============================================================================================ */
+
+/* About Area css
+============================================================================================ */
+.about_area {
+  .about_inner {
+    .col-lg-6 {
+      vertical-align: middle;
+      align-self: center;
+    }
+    .about_left_text {
+      h6 {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #c6b069;
+        font-family: $rob;
+        letter-spacing: 1.2px;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 36px;
+        line-height: 45px;
+        color: $dip;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+      }
+      h5 {
+        font-size: 16px;
+        font-family: $rob;
+        color: $dip;
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 0px;
+      }
+      .main_btn {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+/* End About Area css
+============================================================================================ */
+
+/* Projects Area css
+============================================================================================ */
+.projects_item {
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+  .hover {
+    position: absolute;
+    left: 0px;
+    bottom: -100%;
+    background: $baseColor;
+    width: 100%;
+    padding: 36px;
+    transition: all 400ms ease;
+    h4 {
+      color: $dip;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    p {
+      color: $dip;
+      max-width: 570px;
+      margin-bottom: 0px;
+    }
+  }
+  &:hover {
+    .hover {
+      bottom: 0px;
+    }
+  }
+}
+.wd_18 {
+  flex: 0 0 18.23%;
+  max-width: 18.23%;
+}
+.wd_44 {
+  flex: 0 0 45.31%;
+  max-width: 45.31%;
+}
+/* End Projects Area css
+============================================================================================ */
+
+/* Portfolio Details Area css
+============================================================================================ */
+.portfolio_details_area {
+}
+.portfolio_details_inner {
+  .row {
+    margin-bottom: 65px;
+  }
+  p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  .portfolio_right_text {
+    padding-left: 98px;
+    h4 {
+      color: $dip;
+      font-size: 21px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    p {
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+    .list {
+      li {
+        margin-bottom: 7px;
+        span {
+          font-size: 14px;
+          color: $dip;
+          font-weight: bold;
+          width: 97px;
+          display: inline-block;
+        }
+        color: $pfont;
+        font-weight: normal;
+        font-size: 14px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        i {
+          color: #f1cd09;
+        }
+      }
+    }
+  }
+}
+
+/* End Portfolio Details Area css
+============================================================================================ */

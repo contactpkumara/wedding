@@ -28,9 +28,20 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/chart.js/dist/Chart.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/flat-icons/ecommerce.css",
+              "node_modules/flat-icons/interface.css",
+              "node_modules/flat-icons/technology.css",
+              "node_modules/flat-icons/creative.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/chart.js/dist/Chart.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,6 +135,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "wedding"
 }
